@@ -14,6 +14,7 @@ header {
   display: flex;
   background-color: #1f2937;
   color: #f9faf8;
+  padding: 0 200px;
 }
 
 main {
@@ -28,12 +29,74 @@ footer {
 
 }
 
+.section {
+  display: flex;
+  padding: 0 200px;
+}
+
 .first.section {
   background-color: #1f2937;
   color: #f9faf8;
 }
 
+.second.section {
+  flex-direction: column;
+  align-items: center;
+}
+
 .third.section {
   background-color: #e5e7eb;
   color: #1f2937;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fourth.section {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  color: #f9faf8;
+  flex-basis: 60%;
+}
+
+.links {
+  display: flex;
+  color: #e5e7eb;
+  gap: 20px;
+}
+
+
+.images {
+  display: flex;
+}
+
+svg {
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+
+.quotation {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.author {
+  align-self: flex-end;
+}
+
+.cta {
+  background-color: #3882f6;
+  display: flex;
+  width: 900px;
+  margin: 0 auto;
+  padding: 50px 100px;
+}
+
+.request {
+  flex-basis: 80%;
 }
