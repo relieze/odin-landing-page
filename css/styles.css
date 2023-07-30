@@ -1,25 +1,36 @@
-* {
+html * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  font-size: 16px;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+}
+.hero {
+  background-color: #1f2937;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 700px;
+  justify-content: top;
 }
 
 header {
   display: flex;
-  background-color: #1f2937;
   color: #f9faf8;
-  padding: 0 200px;
+  padding: 15px 200px;
 }
 
 main {
   flex-direction: column;
   flex: 1;
+  flex-basis: 1912px;
 }
 
 footer {
@@ -35,8 +46,8 @@ footer {
 }
 
 .first.section {
-  background-color: #1f2937;
   color: #f9faf8;
+  margin: auto 0;
 }
 
 .second.section {
@@ -59,14 +70,52 @@ footer {
 .logo {
   color: #f9faf8;
   flex-basis: 60%;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .links {
   display: flex;
   color: #e5e7eb;
+  margin: 0 0 0 auto;
+  align-self: center;
+  font-size: 1.4rem;
   gap: 20px;
 }
 
+.intro {
+  flex-basis: 47%;
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-weight: extra-bold;
+  color: #f9faf8;
+}
+
+.intro p {
+  color: #e5e7eb;
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.intro button {
+  background-color: #3882f6;
+  color: #f9faf8;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.7rem;
+  padding: 10px 50px;
+}
+
+.first.section .placeholder {
+  background-color: hsla(0, 0%, 50%, 50%);
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0 auto;
+}
 
 .images {
   display: flex;
