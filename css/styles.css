@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  background-color: #1f2937;
+  color: #f9faf8;
+}
+
+main {
+  flex-direction: column;
+  flex: 1;
+}
+
+footer {
+  background-color: #1f2937;
+  text-align: center;
+  color: #e5e7eb;
+
+}
+
+.first.section {
+  background-color: #1f2937;
+  color: #f9faf8;
+}
+
+.third.section {
+  background-color: #e5e7eb;
+  color: #1f2937;
+}
