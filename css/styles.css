@@ -64,13 +64,14 @@ footer {
 .third.section {
   background-color: #e5e7eb;
   color: #1f2937;
-  flex-direction: column;
+  flex: 0 0 425px;
+  display: flex;
   align-items: center;
-  flex: 0 0 400px;
+  justify-content: center;
 }
 
 .fourth.section {
-  display: flex;
+  background-color: white;
   align-items: center;
 }
 
@@ -156,14 +157,19 @@ svg {
 }
 
 .quotation {
-  display: flex;
-  flex-direction: column;
-  width: 800px;
-  margin: 0 auto;
+  width: 785px;
+}
+
+.quote {
+  font-size: 2.25rem;
+  font-style: italic;
 }
 
 .author {
-  align-self: flex-end;
+  text-align: right;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-right: 20px;
 }
 
 .cta {
