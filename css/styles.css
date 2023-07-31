@@ -12,6 +12,7 @@ body {
 .container-1440px {
   margin: 0 auto;
   width: 1440px;
+  height: 1912px;
   display: flex;
   flex-direction: column;
 }
@@ -26,13 +27,13 @@ body {
 header {
   display: flex;
   color: #f9faf8;
-  padding: 18px 208px 0px;
+  padding: 18px 13rem 0px;
 }
 
 main {
-  flex-direction: column;
   flex: 1;
-  flex-basis: 1912px;
+  display: flex;
+  flex-direction: column;  
 }
 
 footer {
@@ -44,7 +45,7 @@ footer {
 
 .section {
   display: flex;
-  padding: 0 208px;
+  padding: 0 13rem;
 }
 
 .first.section {
@@ -53,10 +54,11 @@ footer {
 }
 
 .second.section {
-  background-color: #f9faf8;
+  background-color: white;
   flex-direction: column;
   text-align: center;
   align-items: center;
+  flex: 0 0 500px;
 }
 
 .third.section {
@@ -64,6 +66,7 @@ footer {
   color: #1f2937;
   flex-direction: column;
   align-items: center;
+  flex: 0 0 400px;
 }
 
 .fourth.section {
@@ -84,10 +87,6 @@ footer {
   align-self: center;
   gap: 25px;
   font-size: 1.125rem;
-}
-
-.links p {
-  min-width: fit-content;
 }
 
 .intro {
@@ -118,31 +117,42 @@ h1 {
 
 .first.section .placeholder {
   background-color: hsla(0, 0%, 90%, 40%);
-  flex-basis: 51%;
-  height: 235px;
+  flex-basis: 51%; 
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 0 0 auto;
+  margin: 0 0 0 auto; 
   font-size: 1.125rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: 900;
+  color: #1f2937;
+  margin: 50px 0;
 }
 
 .images {
   display: flex;
-  gap: 50px;
+  gap: 47px;
 }
 
 .group {
-  width: 200px;
+  width: 170px;
 }
 
 svg {
   display: block;
-  width: 200px;
-  height: 200px;
-  border: #3882f6 solid 5px;
-  border-radius: 20px;
+  width: 170px;
+  height: 170px;
+  border: #3882f6 solid 4px;
+  border-radius: 16px;
   margin: 0 auto 10px;
+}
+
+.group figcaption {
+  color: hsla(0, 2%, 30%, 100%);
+  font-size: 1.125rem;
 }
 
 .quotation {
@@ -167,10 +177,3 @@ svg {
 .request {
   flex-basis: 80%;
 }
-
-
-/* .group {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
