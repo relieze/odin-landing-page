@@ -1,4 +1,4 @@
-html * {
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -39,8 +39,9 @@ main {
 footer {
   background-color: #1f2937;
   text-align: center;
-  color: #e5e7eb;
-
+  color: white;
+  padding: 40px;
+  font-size: 1.125rem;
 }
 
 .section {
@@ -65,13 +66,15 @@ footer {
   background-color: #e5e7eb;
   color: #1f2937;
   flex: 0 0 425px;
-  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 .fourth.section {
   background-color: white;
+  flex: 1;
+  justify-content: center;
   align-items: center;
 }
 
@@ -156,30 +159,50 @@ svg {
   font-size: 1.125rem;
 }
 
-.quotation {
-  width: 785px;
-}
-
 .quote {
   font-size: 2.25rem;
   font-style: italic;
+  width: 785px;
 }
 
 .author {
-  text-align: right;
+  align-self: flex-end;
   font-weight: 700;
   font-size: 1.5rem;
-  margin-right: 20px;
+  margin-right: 150px;
 }
 
 .cta {
   background-color: #3882f6;
-  display: flex;
-  width: 900px;
+  width: 1020px;
   margin: 0 auto;
-  padding: 50px 100px;
+  padding: 50px 0; 
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 160px;
 }
 
-.request {
-  flex-basis: 80%;
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.request p {
+  color: #e5e7eb;
+  font-size: 1.125rem;
+}
+
+.cta button {
+  background-color: #3882f6;
+  color: white;
+  padding: 6px 32px;
+  border: white solid 2px;
+  border-radius: 8px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-top: 5px;
 }
