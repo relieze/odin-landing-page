@@ -2,29 +2,31 @@ html * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-html {
-  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
+  background-color: black;
+}
+
+.container-1440px {
+  margin: 0 auto;
+  width: 1440px;
   display: flex;
   flex-direction: column;
 }
+
 .hero {
   background-color: #1f2937;
   display: flex;
   flex-direction: column;
-  flex: 0 0 700px;
-  justify-content: top;
+  flex: 0 0 535px;
 }
 
 header {
   display: flex;
   color: #f9faf8;
-  padding: 15px 200px;
+  padding: 18px 208px 0px;
 }
 
 main {
@@ -42,16 +44,18 @@ footer {
 
 .section {
   display: flex;
-  padding: 0 200px;
+  padding: 0 208px;
 }
 
 .first.section {
   color: #f9faf8;
-  margin: auto 0;
+  margin: 122px 0 0;
 }
 
 .second.section {
+  background-color: #f9faf8;
   flex-direction: column;
+  text-align: center;
   align-items: center;
 }
 
@@ -69,8 +73,7 @@ footer {
 
 .logo {
   color: #f9faf8;
-  flex-basis: 60%;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -79,24 +82,27 @@ footer {
   color: #e5e7eb;
   margin: 0 0 0 auto;
   align-self: center;
-  font-size: 1.4rem;
-  gap: 20px;
+  gap: 25px;
+  font-size: 1.125rem;
+}
+
+.links p {
+  min-width: fit-content;
 }
 
 .intro {
-  flex-basis: 47%;
+  flex-basis: 45%;
 }
 
 h1 {
-  font-size: 4.5rem;
-  font-weight: extra-bold;
+  font-size: 3rem;
+  font-weight: bold;
   color: #f9faf8;
 }
 
 .intro p {
   color: #e5e7eb;
-  font-size: 1.5rem;
-  margin: 10px 0;
+  font-size: 1.125rem;
 }
 
 .intro button {
@@ -104,27 +110,39 @@ h1 {
   color: #f9faf8;
   border: none;
   border-radius: 10px;
-  font-size: 1.7rem;
-  padding: 10px 50px;
+  margin: 12px 0;
+  padding: 8px 35px;
+  font-size: 1.125rem;
+  font-weight: 900;
 }
 
 .first.section .placeholder {
-  background-color: hsla(0, 0%, 50%, 50%);
-  flex-basis: 50%;
+  background-color: hsla(0, 0%, 90%, 40%);
+  flex-basis: 51%;
+  height: 235px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 0 0 auto;
+  font-size: 1.125rem;
 }
 
 .images {
   display: flex;
+  gap: 50px;
+}
+
+.group {
+  width: 200px;
 }
 
 svg {
   display: block;
   width: 200px;
   height: 200px;
+  border: #3882f6 solid 5px;
+  border-radius: 20px;
+  margin: 0 auto 10px;
 }
 
 .quotation {
@@ -149,3 +167,10 @@ svg {
 .request {
   flex-basis: 80%;
 }
+
+
+/* .group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
